@@ -75,3 +75,68 @@ for (let i = 0; i < lines.length; i++){
   console.log(lines[i]);
 }
 ```
+
+---
+
+# Task 2 - Arguments
+
+This task prints a message depending on how many arguments are passed to the script.
+
+## Requirements
+
+* If no argument is passed → print `No argument`
+* If one argument is passed → print `Argument found`
+* If more than one argument is passed → print `Arguments found`
+* Use `console.log(...)` to print output
+* You are **not allowed** to use `var`
+* Use `process.argv` to count arguments
+
+### Sample Code
+
+```js
+const count = process.argv.length - 2;
+
+if (count === 0) {
+  console.log("No argument");
+} else if (count === 1) {
+  console.log(
+
+This task is to write a JavaScript script that prints three lines:
+
+```
+
+C is fun
+Python is cool
+JavaScript is amazing
+
+````
+
+## Requirements
+
+- You must print all 3 lines using `console.log(...)`
+- You are **not allowed** to use `var`
+
+## Example
+
+When you run the file:
+
+```bash
+node 1-multi_languages.js
+````
+
+You should see:
+
+```
+C is fun
+Python is cool
+JavaScript is amazing
+```
+
+## Sample Code
+
+```js
+let lines = ["C is fun", "Python is cool", "JavaScript is amazing"];
+for (let i = 0; i < lines.length; i++){
+  console.log(lines[i]);
+}
+```
