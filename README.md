@@ -193,3 +193,85 @@ const second = process.argv[3];
 
 console.log(first + " is " + second);
 ```
+
+
+# 5-to_integer.js
+
+### Task Description
+
+This script prints `My number: <first argument converted to integer>` if the first argument can be converted to an integer. If it cannot be converted, it prints `Not a number` instead.
+
+### Requirements:
+
+* Use `console.log(...)` to print output
+* Do **not** use `var`
+* Do **not** use try/catch
+* First argument should be taken from the command line
+* Use `parseInt()` or `Number()`
+
+### Example Usage:
+
+```bash
+node 5-to_integer.js
+```
+
+Output:
+
+```
+Not a number
+```
+
+```bash
+node 5-to_integer.js 89
+```
+
+Output:
+
+```
+My number: 89
+```
+
+```bash
+node 5-to_integer.js "89"
+```
+
+Output:
+
+```
+My number: 89
+```
+
+```bash
+node 5-to_integer.js 89.89
+```
+
+Output:
+
+```
+My number: 89
+```
+
+```bash
+node 5-to_integer.js School
+```
+
+Output:
+
+```
+Not a number
+```
+
+### Code Used
+
+```js
+#!/usr/bin/node
+
+const arg = process.argv[2];
+const num = parseInt(arg);
+
+if (isNaN(num)) {
+  console.log("Not a number");
+} else {
+  console.log("My number: " + num);
+}
+```
