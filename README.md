@@ -398,3 +398,17 @@ if (isNaN(num)) {
   for (let i = 0; i < num; i++) {
     console
 ```
+
+8. Square
+
+This script prints a square using the character X.
+
+Description
+
+The first argument passed to the script is the size of the square.
+
+If the argument is missing or cannot be converted to an integer → print Missing size.
+
+The square must be printed using "X" and printed on multiple lines.
+
+You must use a loop.
