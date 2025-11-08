@@ -412,3 +412,32 @@ If the argument is missing or cannot be converted to an integer → print Missin
 The square must be printed using "X" and printed on multiple lines.
 
 You must use a loop.
+
+---
+
+9. Add
+
+Description:
+This script prints the sum of two integers.
+
+First argument = first number
+
+Second argument = second number
+
+You must create a function named:
+function add(a, b)
+
+You must use console.log
+
+No var allowed
+
+Example output:
+
+$ node 9-add.js
+NaN
+
+$ node 9-add.js 3
+NaN
+
+$ node 9-add.js 3 7
+10
