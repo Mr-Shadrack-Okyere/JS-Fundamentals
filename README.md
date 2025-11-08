@@ -99,44 +99,34 @@ const count = process.argv.length - 2;
 if (count === 0) {
   console.log("No argument");
 } else if (count === 1) {
-  console.log(
-
-This task is to write a JavaScript script that prints three lines:
-
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
+}
 ```
 
-C is fun
-Python is cool
-JavaScript is amazing
+---
 
-````
+# Task 3 - Value of my argument
+
+This task prints the **first argument** passed to the script.
 
 ## Requirements
 
-- You must print all 3 lines using `console.log(...)`
-- You are **not allowed** to use `var`
+* If no argument is passed → print `No argument`
+* Print only the first argument
+* You must use `console.log(...)` to print output
+* You are **not allowed** to use `var`
+* You are **not allowed** to use `.length`
 
-## Example
-
-When you run the file:
-
-```bash
-node 1-multi_languages.js
-````
-
-You should see:
-
-```
-C is fun
-Python is cool
-JavaScript is amazing
-```
-
-## Sample Code
+### Sample Code
 
 ```js
-let lines = ["C is fun", "Python is cool", "JavaScript is amazing"];
-for (let i = 0; i < lines.length; i++){
-  console.log(lines[i]);
+const arg = process.argv[2];
+
+if (arg === undefined) {
+  console.log("No argument");
+} else {
+  console.log(arg);
 }
 ```
