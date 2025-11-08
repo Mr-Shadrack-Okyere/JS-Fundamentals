@@ -130,3 +130,66 @@ if (arg === undefined) {
   console.log(arg);
 }
 ```
+
+# 4-concat.js
+
+### Task Description
+
+This script prints two arguments passed to it, in the following format:
+
+```
+<first argument> is <second argument>
+```
+
+### Requirements:
+
+* Use `console.log(...)` to print output
+* Do **not** use `var`
+* The printed words come from the arguments passed in the command line
+
+### Example Usage:
+
+```bash
+node 4-concat.js c cool
+```
+
+Output:
+
+```
+c is cool
+```
+
+If only one argument is given:
+
+```bash
+node 4-concat.js c
+```
+
+Output:
+
+```
+c is undefined
+```
+
+If no arguments are given:
+
+```bash
+node 4-concat.js
+```
+
+Output:
+
+```
+undefined is undefined
+```
+
+### Code Used:
+
+```js
+#!/usr/bin/node
+
+const first = process.argv[2];
+const second = process.argv[3];
+
+console.log(first + " is " + second);
+```
