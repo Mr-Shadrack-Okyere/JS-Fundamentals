@@ -441,3 +441,34 @@ NaN
 
 $ node 9-add.js 3 7
 10
+
+---
+
+10. Factorial
+
+Description:
+This script computes the factorial of a number.
+
+First argument = integer to compute factorial
+
+If argument is not a number → factorial is 1
+
+You must use a recursive function
+
+You must use console.log
+
+No var allowed
+
+Example output:
+
+$ node 10-factorial.js
+1
+
+$ node 10-factorial.js 3
+6
+
+$ node 10-factorial.js 89
+1.6507955160908452e+136
+
+$ node 10-factorial.js 333
+Infinity
