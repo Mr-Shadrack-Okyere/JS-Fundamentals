@@ -322,3 +322,79 @@ for (let i = 0; i < lines.length; i++) {
   console.log(lines[i]);
 }
 ```
+
+# 7-multi_c.js
+
+### Task Description
+
+This script prints `C is fun` a number of times based on the first argument passed to the script.
+
+### Requirements:
+
+* Use `console.log(...)` for printing
+* Do **not** use `var`
+* Use a loop (`for`, `while`, etc.)
+* Use only **two** `console.log`
+* If the argument cannot be converted into an integer, print:
+  `Missing number of occurrences`
+
+### Example Usage:
+
+```bash
+node 7-multi_c.js 2
+```
+
+Output:
+
+```
+C is fun
+C is fun
+```
+
+```bash
+node 7-multi_c.js 5
+```
+
+Output:
+
+```
+C is fun
+C is fun
+C is fun
+C is fun
+C is fun
+```
+
+```bash
+node 7-multi_c.js
+```
+
+Output:
+
+```
+Missing number of occurrences
+```
+
+```bash
+node 7-multi_c.js School
+```
+
+Output:
+
+```
+Missing number of occurrences
+```
+
+### Code Used
+
+```js
+#!/usr/bin/node
+
+const num = parseInt(process.argv[2]);
+
+if (isNaN(num)) {
+  console.log("Missing number of occurrences");
+} else {
+  for (let i = 0; i < num; i++) {
+    console
+```
