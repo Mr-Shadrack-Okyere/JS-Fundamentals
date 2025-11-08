@@ -275,3 +275,50 @@ if (isNaN(num)) {
   console.log("My number: " + num);
 }
 ```
+
+
+# 6-multi_languages_loop.js
+
+### Task Description
+
+This script prints 3 lines using an array and a loop:
+
+* `C is fun`
+* `Python is cool`
+* `JavaScript is amazing`
+
+This task is similar to task 1, but this time the output **must** come from an array and must be printed using a loop.
+
+### Requirements:
+
+* Use an array of strings
+* Use a loop (`for` or `while`)
+* Use **only one** `console.log` per printed line
+* Do NOT use `var`
+* No `if/else` statements
+
+### Example Usage:
+
+```bash
+node 6-multi_languages_loop.js
+```
+
+Output:
+
+```
+C is fun
+Python is cool
+JavaScript is amazing
+```
+
+### Code Used:
+
+```js
+#!/usr/bin/node
+
+const lines = ["C is fun", "Python is cool", "JavaScript is amazing"];
+
+for (let i = 0; i < lines.length; i++) {
+  console.log(lines[i]);
+}
+```
